@@ -33,49 +33,112 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for MemoCards</h1>
-        <p><strong>Effective Date:</strong> July 2, 2024</p>
-        <p>We respect the privacy of users of our application MemoCards. This Privacy Policy describes what information we collect, how we use it, and what rights you have regarding this information.</p>
+        <p><strong>Effective Date:</strong> (укажите актуальную дату)</p>
+
+        <p>Thank you for using MemoCards. We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
 
         <h2>1. Information We Collect</h2>
         
-        <h3>1.1 Personal Information</h3>
-        <p>MemoCards does not collect personal information such as name, address, or contact details. The app uses Firebase anonymous authentication to create a unique user identifier.</p>
+        <h3>1.1 Personal Information (Google Sign-In)</h3>
+        <p>
+            We use Firebase Authentication to allow users to sign in with their Google account. 
+            When you sign in, we may collect and store the following information:
+        </p>
+        <ul>
+            <li><strong>Google Account ID</strong> (a unique identifier for your Google account)</li>
+            <li><strong>Email address</strong> (if provided by Google)</li>
+        </ul>
+        <p>
+            This data is used solely for authentication purposes and to associate your personal dictionaries and settings with your account. 
+            If you do not sign in, we create an anonymous user ID to provide basic functionality.
+        </p>
         
-        <h3>1.2 Automatically Collected Information</h3>
-        <p>When using the app, we may automatically collect certain information such as device type, unique device identifiers, operating system, and other diagnostic information.</p>
+        <h3>1.2 User-Generated Content (Dictionaries)</h3>
+        <p>
+            MemoCards allows you to create or upload dictionary files (word lists). 
+            These files may be stored in Firebase (Firestore or Storage) so that you can access them across devices. 
+            The content of these dictionaries is not shared publicly unless you explicitly choose to do so.
+        </p>
+
+        <h3>1.3 Automatically Collected Information</h3>
+        <p>
+            We may automatically collect certain information when you use the app, including:
+        </p>
+        <ul>
+            <li><strong>Device Information:</strong> device model, operating system version, unique device identifiers.</li>
+            <li><strong>Usage Data:</strong> features used, time spent in the app, and other diagnostic data.</li>
+            <li><strong>Advertising ID (AdID):</strong> if you have enabled personalized ads or we serve non-personalized ads through Google AdMob.</li>
+        </ul>
 
         <h2>2. How We Use Collected Information</h2>
         
-        <h3>2.1 To Improve the Service</h3>
-        <p>The collected information helps us improve the functionality and performance of the app. For example, usage data allows us to better understand how users interact with various features.</p>
-        
+        <h3>2.1 Storing Content</h3>
+        <p>
+            We use Firebase (Firestore/Storage) to store user-created dictionaries and related data. This allows you to access your dictionaries from multiple devices and keep your data synced.
+        </p>
+
         <h3>2.2 Authentication</h3>
-        <p>We use Firebase for anonymous user authentication to provide access to their data and settings.</p>
+        <p>
+            Firebase Authentication (including Google Sign-In) is used to securely associate your data (such as dictionaries) with your user account. This helps us ensure only you can access or modify your content.
+        </p>
 
-        <h2>3. Permissions</h2>
-        
-        <h3>3.1 Access to Local Storage</h3>
-        <p>The app requests permission to access your device's local storage (READ_EXTERNAL_STORAGE) to read and load dictionary files.</p>
+        <h3>2.3 Remote Config</h3>
+        <p>
+            We use Firebase Remote Config to dynamically configure certain aspects of the app (for example, managing the priority or usage of different AI APIs). This does not collect personal data from you; it only allows us to adjust app behavior.
+        </p>
 
-        <h3>3.2 Advertising Permissions</h3>
-        <p>The app uses advertising through Google AdMob, which may request permission to use your device's advertising identifier for displaying personalized or non-personalized ads. The advertising SDK may collect device-related information, such as your advertising identifier (AdID).</p>
+        <h3>2.4 Advertising</h3>
+        <p>
+            We integrate Google AdMob to display advertisements. AdMob may use your device’s Advertising ID (AdID) to serve personalized or non-personalized ads, in accordance with your device settings and Google’s advertising policies.
+        </p>
 
-        <h2>4. Sharing Information with Third Parties</h2>
-        <p>We do not share your personal information with third parties. However, we may share anonymous information with our partners and service providers to improve the app and provide additional features. Additionally, our advertising partners (such as AdMob) may collect and use anonymous information to provide personalized or non-personalized advertisements to you.</p>
+        <h3>2.5 Improving the Service</h3>
+        <p>
+            Automatically collected information (e.g., usage data, device info) helps us understand how users interact with the app and improve functionality and user experience.
+        </p>
 
-        <h2>5. Data Protection</h2>
-        <p>We take reasonable measures to protect the collected information from unauthorized access, alteration, disclosure, or destruction. Specifically, we use modern security methods such as encryption and authentication.</p>
+        <h2>3. Sharing Information with Third Parties</h2>
+        <p>
+            We do not sell or share your personal information with third parties, except as described below:
+        </p>
+        <ul>
+            <li>
+                <strong>Firebase Services:</strong> We use Firebase (provided by Google) for authentication, data storage, and remote config. Google may have access to some usage and device data for analytics and service improvement.
+            </li>
+            <li>
+                <strong>AdMob:</strong> Advertising partners may collect and use device information (including Advertising ID) to provide relevant ads. This data is processed in accordance with Google’s advertising policies.
+            </li>
+        </ul>
+        <p>
+            We may also share aggregated, anonymized information (e.g., total number of users) for research or analytical purposes.
+        </p>
 
-        <h2>6. Changes to the Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. All changes will be posted on this page with the date of the latest update. We recommend periodically checking this page for changes.</p>
+        <h2>4. Data Protection</h2>
+        <p>
+            We take reasonable measures to protect the information we collect from unauthorized access, alteration, or disclosure. 
+            This includes using secure connections (HTTPS) and following best practices for data storage.
+        </p>
 
-        <h2>7. Contact</h2>
-        <p>If you have any questions or suggestions regarding our Privacy Policy, please contact us by email at Tolkien2007@yandex.ru.</p>
+        <h2>5. Your Choices</h2>
+        <ul>
+            <li><strong>Managing Your Content:</strong> You can create, edit, or delete your dictionaries at any time within the app.</li>
+            <li><strong>Google Account:</strong> You can sign out of your Google account or revoke permissions via your Google account settings.</li>
+            <li><strong>Advertising Settings:</strong> You can opt out of personalized ads on your device by changing your device settings (e.g., “Opt out of Ads Personalization”).</li>
+        </ul>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. All changes will be posted on this page with the date of the latest update. We recommend periodically checking this page for changes.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions or suggestions regarding our Privacy Policy, please contact us at:
+        </p>
+        <p><strong>Email:</strong> Tolkien2007@yandex.ru</p>
 
         <p>Thank you for using MemoCards!</p>
-
         <p>MemoCards Team</p>
-        <p>Tolkien2007@yandex.ru</p>
     </div>
 </body>
 </html>
