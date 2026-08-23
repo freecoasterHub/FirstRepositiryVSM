@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Your MemoCards Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 { color: #333; }
+    h2 { color: #555; margin-top: 30px; }
+    p, li { color: #666; }
+    a { color: #0b57d0; }
+    .warning {
+      padding: 14px;
+      border-left: 4px solid #d97706;
+      background: #fff7ed;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Delete Your MemoCards Account</h1>
+
+<p><strong>Last Updated:</strong> August 23, 2026</p>
+
+<p>
+This page explains how to delete a MemoCards account and the server-side data
+associated with it.
+</p>
+
+<p>
+You can delete your account directly inside MemoCards or request deletion
+without having the app installed.
+</p>
+
+<h2>Option 1 — Delete Your Account in MemoCards</h2>
+
+<ol>
+  <li>Open MemoCards.</li>
+  <li>Open <strong>Account Settings</strong>.</li>
+  <li>Tap <strong>Delete account</strong>.</li>
+  <li>Review the deletion information and confirm.</li>
+</ol>
+
+<p>
+After a successful deletion, MemoCards removes your Firebase Authentication
+account and the MemoCards server-side account records associated with that
+Firebase account.
+</p>
+
+<h2>Option 2 — Request Deletion Without the App</h2>
+
+<p>
+You can request account deletion by email:
+</p>
+
+<p>
+<a href="mailto:Tolkien2007@yandex.ru?subject=MemoCards%20Account%20Deletion%20Request">
+Tolkien2007@yandex.ru
+</a>
+</p>
+
+<p>
+Use the subject:
+<strong>MemoCards Account Deletion Request</strong>
+</p>
+
+<p>
+Please include the Google email address that you used to sign in to MemoCards.
+If possible, send the request from that same email address.
+</p>
+
+<p>
+We may request reasonable verification before processing the request to
+prevent unauthorized deletion of another person's account.
+Verified external requests will normally be processed within 30 days.
+</p>
+
+<h2>Active Google Play Subscriptions</h2>
+
+<div class="warning">
+
+<p>
+<strong>Deleting a MemoCards account does not cancel a Google Play subscription.</strong>
+</p>
+
+<p>
+If Google Play reports that your subscription is still set to auto-renew,
+you must first manage or cancel the subscription through Google Play before
+MemoCards account deletion can be completed.
+</p>
+
+</div>
+
+<p>
+If auto-renewal has already been disabled, MemoCards may allow deletion even
+if a previously paid subscription period has not yet reached its original
+expiry date. Deleting the MemoCards account can end access to remaining
+account-linked paid functionality.
+</p>
+
+<h2>What MemoCards Deletes</h2>
+
+<p>Account deletion removes:</p>
+
+<ul>
+  <li>your Firebase Authentication account used by MemoCards;</li>
+  <li>your MemoCards <code>user_limits</code> server record, if present;</li>
+  <li>your legacy MemoCards <code>user_stats</code> server record, if present.</li>
+</ul>
+
+<p>
+When deletion is performed inside MemoCards, the app also clears local
+account-linked subscription, entitlement, purchase-cache, and
+AI-description/regeneration state.
+</p>
+
+<h2>What Is Not Automatically Deleted</h2>
+
+<p>
+Personal dictionaries and word lists that exist only locally on your device
+are intentionally preserved because they are not stored as MemoCards
+cloud-account data.
+</p>
+
+<p>
+You can delete these dictionaries inside MemoCards or remove all local
+MemoCards data through Android application-storage settings.
+</p>
+
+<p>
+If Android backup is enabled, some local MemoCards data may also exist in an
+Android or device-provider backup. These backups are controlled by the
+operating system or backup provider and cannot be directly erased through
+MemoCards Firebase account deletion.
+</p>
+
+<p>
+Google Play transaction, payment, purchase, and subscription records are
+maintained by Google and are not erased by deleting your MemoCards account.
+</p>
+
+<p>
+Service providers may also retain security, billing, legal, or backup records
+when required under their own policies or applicable law.
+</p>
+
+<h2>After Account Deletion</h2>
+
+<p>
+If you later sign in to MemoCards again using the same Google account,
+Firebase may create a new MemoCards account identity.
+</p>
+
+<p>
+Previously deleted MemoCards server-side account data is not restored merely
+because you sign in again.
+</p>
+
+<h2>Privacy Policy</h2>
+
+<p>
+For more information about MemoCards data handling, see:
+<a href="privacy_policy.html">MemoCards Privacy Policy</a>.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+Questions about account or data deletion:
+</p>
+
+<p>
+<a href="mailto:Tolkien2007@yandex.ru">
+Tolkien2007@yandex.ru
+</a>
+</p>
+
+<p>MemoCards</p>
+
+</div>
+</body>
+</html>
