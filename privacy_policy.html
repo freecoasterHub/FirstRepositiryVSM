@@ -5,90 +5,534 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy for MemoCards</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; background-color: #f9f9f9; }
-    .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
     h1 { color: #333; }
-    h2 { color: #555; }
-    p { color: #666; }
+    h2 { color: #555; margin-top: 30px; }
+    h3 { color: #555; }
+    p, li { color: #666; }
+    a { color: #0b57d0; }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Privacy Policy for MemoCards</h1>
-    <p><strong>Effective Date:</strong> October 24, 2025</p>
+<div class="container">
 
-    <p>Thank you for using MemoCards. We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+<h1>Privacy Policy for MemoCards</h1>
 
-    <h2>1. Information We Collect</h2>
+<p>
+<strong>Effective Date:</strong> August 23, 2026<br>
+<strong>Last Updated:</strong> August 23, 2026
+</p>
 
-    <h3>1.1 Personal Information (Google Sign-In)</h3>
-    <p>We use Firebase Authentication to allow users to sign in with their Google account. When you sign in, we may collect and store the following information:</p>
-    <ul>
-      <li><strong>Google Account ID</strong> (a unique identifier for your Google account)</li>
-      <li><strong>Email address</strong> (if provided by Google)</li>
-    </ul>
-    <p>This data is used solely for authentication purposes and to associate your personal dictionaries and settings with your account. If you do not sign in, we create an anonymous user ID to provide basic functionality.</p>
+<p>
+Thank you for using MemoCards. This Privacy Policy explains what information
+MemoCards processes, how it is used, when it is sent to service providers,
+how it is protected, and how you can delete your MemoCards account and
+associated server-side data.
+</p>
 
-    <h3>1.2 User-Generated Content (Dictionaries)</h3>
-    <p>MemoCards allows you to create or upload dictionary files (word lists). These files may be stored in Firebase (Firestore or Storage) so that you can access them across devices. The content of these dictionaries is not shared publicly unless you explicitly choose to do so.</p>
+<h2>1. Data Stored Locally on Your Device</h2>
 
-    <h3>1.3 Automatically Collected Information</h3>
-    <p>We may automatically collect certain information when you use the app, including:</p>
-    <ul>
-      <li><strong>Device Information:</strong> device model, operating system version, unique device identifiers.</li>
-      <li><strong>Usage Data:</strong> features used, time spent in the app, and other diagnostic data.</li>
-      <li><strong>Advertising ID (AdID):</strong> used to serve personalized or non-personalized ads through Google AdMob, in accordance with your device settings and Google’s advertising policies.</li>
-    </ul>
+<h3>1.1 Personal Dictionaries and Learning Data</h3>
 
-    <h4>Analytics and Usage Metrics</h4>
-    <p>We use Firebase Analytics, Google Analytics for Firebase (GA4), Meta SDK, and Firebase Crashlytics to collect anonymized usage data. This may include events such as <code>app_open</code>, <code>screen_view</code>, <code>word_view</code>, <code>training_start</code>, <code>training_complete</code>, <code>ai_description_request</code>, and <code>achievement_unlocked</code>. These metrics help us understand how users interact with the app, measure learning progress (“Learning Active Time”), analyze engagement, and improve the learning experience. All analytics data is anonymized and does not include any personally identifiable information (PII).</p>
+<p>
+User-created or user-imported dictionaries, word lists, training state,
+learning progress, locally cached AI descriptions, app preferences, and
+similar learning content are primarily stored locally on your device.
+</p>
 
-    <h2>2. How We Use Collected Information</h2>
+<p>
+MemoCards does not upload your personal dictionaries to our Firebase backend
+merely to provide cloud synchronization.
+</p>
 
-    <h3>2.1 Storing Content</h3>
-    <p>We use Firebase (Firestore/Storage) to store user-created dictionaries and related data. This allows you to access your dictionaries from multiple devices and keep your data synced.</p>
+<p>
+MemoCards uses Firebase Storage for application-provided content, such as
+dictionary/catalog files and tutorial or in-app media. This is different from
+storing your personal dictionaries in Firebase Storage.
+</p>
 
-    <h3>2.2 Authentication</h3>
-    <p>Firebase Authentication (including Google Sign-In) is used to securely associate your data (such as dictionaries) with your user account. This helps us ensure only you can access or modify your content.</p>
+<h3>1.2 Android Backup</h3>
 
-    <h3>2.3 Remote Config</h3>
-    <p>We use Firebase Remote Config to dynamically configure certain aspects of the app (for example, managing the priority or usage of different AI APIs). This does not collect personal data from you; it only allows us to adjust app behavior.</p>
+<p>
+MemoCards currently permits Android system backup. Depending on your Android
+version, device manufacturer, account settings, and backup configuration,
+Android or your device backup provider may back up or transfer some locally
+stored MemoCards data.
+</p>
 
-    <h3>2.4 Advertising</h3>
-    <p>We integrate Google AdMob to display advertisements. AdMob may use your device’s Advertising ID (AdID) to serve personalized or non-personalized ads, in accordance with your device settings and Google’s advertising policies. You can opt out of personalized ads by adjusting your device settings.</p>
+<p>
+Such system backups are controlled by Android or the applicable backup
+provider and are separate from the MemoCards Firebase account.
+</p>
 
-    <h3>2.5 Improving the Service</h3>
-    <p>We analyze anonymized usage data (from GA4, Firebase Analytics, and Meta SDK) to understand how users engage with MemoCards. Metrics such as learning activity duration, session length, or feature usage help us improve user experience, optimize training efficiency, and measure overall learning progress. All collected analytics data is aggregated and does not include any personal or dictionary content.</p>
+<h2>2. Google Sign-In and MemoCards Accounts</h2>
 
-    <h2>3. Sharing Information with Third Parties</h2>
-    <p>We do not sell or share your personal information with third parties, except as described below:</p>
-    <ul>
-      <li><strong>Firebase Services:</strong> We use Firebase (provided by Google) for authentication, data storage, analytics, and remote configuration. Google may have access to some anonymized usage and device data for service improvement, under its privacy policy.</li>
-      <li><strong>AdMob:</strong> Advertising partners may collect and use device information (including Advertising ID) to provide relevant ads. This data is processed in accordance with Google’s advertising policies.</li>
-      <li><strong>Crashlytics:</strong> Firebase Crashlytics collects technical data about app errors and crashes (e.g., device type, OS version, and stack trace). No personal content or dictionary data is transmitted.</li>
-    </ul>
-    <p>We may also share aggregated, anonymized information (e.g., total number of users or average study time) for research, product analytics, or investor reporting. These datasets never contain any identifiable user data.</p>
+<p>
+Core local MemoCards functionality can be used without creating a MemoCards
+cloud account. The current MemoCards version does not intentionally create an
+anonymous Firebase Authentication account merely because the app is used
+without signing in.
+</p>
 
-    <h2>4. Data Protection</h2>
-    <p>We take reasonable measures to protect the information we collect from unauthorized access, alteration, or disclosure. This includes using secure connections (HTTPS) and following best practices for encryption and access control within Firebase. Crashlytics and Analytics use anonymized identifiers and comply with Google’s data protection standards (GDPR and CCPA).</p>
+<p>
+If you choose to sign in with Google, MemoCards uses Google Sign-In and
+Firebase Authentication. Depending on the information made available through
+Google Sign-In, MemoCards may process:
+</p>
 
-    <h2>5. Your Choices</h2>
-    <ul>
-      <li><strong>Managing Your Content:</strong> You can create, edit, or delete your dictionaries at any time within the app.</li>
-      <li><strong>Google Account:</strong> You can sign out of your Google account or revoke permissions via your Google account settings.</li>
-      <li><strong>Advertising Settings:</strong> You can opt out of personalized ads on your device by changing your device settings (e.g., “Opt out of Ads Personalization”).</li>
-      <li><strong>Analytics & Diagnostics:</strong> You can disable analytics data collection (Firebase Analytics, Meta SDK, or Crashlytics) via your device privacy settings. On Android, go to <em>Settings → Privacy → Ads</em> and select “Delete Advertising ID” or “Opt out of Ads Personalization.” MemoCards will continue to function normally, but anonymized usage statistics will no longer be collected.</li>
-    </ul>
+<ul>
+  <li>a Firebase user ID (UID);</li>
+  <li>your email address;</li>
+  <li>your display name, when available;</li>
+  <li>your Google profile photo, when available.</li>
+</ul>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. All changes will be posted on this page with the date of the latest update. We recommend periodically checking this page for changes.</p>
+<p>
+This information is used for authentication, account display,
+purchase/subscription association, account security, and account deletion.
+MemoCards does not receive your Google password.
+</p>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions or suggestions regarding our Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> Tolkien2007@yandex.ru</p>
+<h2>3. Purchases and Subscriptions</h2>
 
-    <p>Thank you for using MemoCards!</p>
-    <p>MemoCards Team</p>
-  </div>
+<p>
+Purchases and subscriptions are processed through Google Play Billing.
+MemoCards does not receive your full payment card or bank account information.
+</p>
+
+<p>
+To verify purchases and maintain account entitlements, MemoCards and its
+backend may process information such as:
+</p>
+
+<ul>
+  <li>Google Play product identifiers;</li>
+  <li>purchase tokens;</li>
+  <li>purchase or subscription status;</li>
+  <li>subscription expiry information;</li>
+  <li>auto-renewal status;</li>
+  <li>the Firebase UID used to associate an entitlement with an authenticated account.</li>
+</ul>
+
+<p>
+Purchase verification may use Firebase Cloud Functions and the Google Play
+Developer API. Google Play maintains its own billing and transaction records
+under Google's terms and privacy practices.
+</p>
+
+<h2>4. AI Features</h2>
+
+<p>
+When you request an AI-generated word description or another AI operation,
+MemoCards sends the information necessary to perform that request to a
+MemoCards Firebase Cloud Function.
+</p>
+
+<p>
+This may include the relevant word or phrase, language information,
+instructions, and other prompt context required to generate the requested
+content.
+</p>
+
+<p>
+In the current privacy-hardened MemoCards release, AI generation is routed
+through our Firebase backend to <strong>Google Gemini</strong>.
+</p>
+
+<p>
+Older MemoCards versions may have used other configured AI or translation
+providers, including OpenAI, DeepSeek, Google Gemini, or DeepL. Users are
+encouraged to keep MemoCards updated to the latest version.
+</p>
+
+<p>
+MemoCards does not intentionally include your email address or Google profile
+information in the text prompt sent to the AI model.
+</p>
+
+<p>
+You should not submit sensitive, confidential, or unnecessary personal
+information through AI input. AI-provider processing and retention are also
+subject to the provider's applicable terms and privacy policies.
+</p>
+
+<p>
+Google Gemini API Terms:
+<a href="https://ai.google.dev/gemini-api/terms">
+Gemini API Additional Terms of Service
+</a>.
+</p>
+
+<p>
+Google Privacy Policy:
+<a href="https://policies.google.com/privacy">
+Google Privacy Policy
+</a>.
+</p>
+
+<h2>5. Firebase and Technical Service Data</h2>
+
+<p>
+MemoCards uses services provided by Google/Firebase, including Firebase
+Authentication, Cloud Firestore, Cloud Functions, Remote Config,
+Firebase Storage, Firebase Cloud Messaging, Firebase Installations,
+and Firebase App Check.
+</p>
+
+<p>
+Depending on the service being used, Google may process technical information
+needed to provide, configure, protect, or operate those services, including:
+</p>
+
+<ul>
+  <li>Firebase installation identifiers;</li>
+  <li>Firebase application identifiers;</li>
+  <li>app package and version information;</li>
+  <li>Firebase SDK version information;</li>
+  <li>operating-system and platform information;</li>
+  <li>language and time-zone information;</li>
+  <li>country or region information;</li>
+  <li>network information such as IP address where required to operate or secure a service;</li>
+  <li>notification registration information used by Firebase Cloud Messaging.</li>
+</ul>
+
+<h3>5.1 App Check and Play Integrity</h3>
+
+<p>
+MemoCards uses Firebase App Check with Google Play Integrity in production
+to help protect backend services against unauthorized clients, abuse, and
+fraud.
+</p>
+
+<p>
+Google may process application/device integrity and attestation information
+for this security purpose.
+</p>
+
+<p>
+More information about Firebase privacy practices is available at:
+<a href="https://firebase.google.com/support/privacy">
+Privacy and Security in Firebase
+</a>.
+</p>
+
+<h2>6. Advertising and Privacy Choices</h2>
+
+<p>
+MemoCards integrates Google AdMob to display advertising.
+</p>
+
+<p>
+The app uses Google's User Messaging Platform (UMP) to obtain and manage
+advertising/privacy choices where required. MemoCards only authorizes ad
+initialization and loading when UMP reports that ads may be requested.
+</p>
+
+<p>
+Depending on your region, consent choices, device settings, and Google's
+advertising configuration, Google AdMob and advertising partners may process
+information such as:
+</p>
+
+<ul>
+  <li>Advertising ID when available and permitted;</li>
+  <li>IP address;</li>
+  <li>device and application information;</li>
+  <li>advertising/privacy consent signals;</li>
+  <li>ad impressions and interactions;</li>
+  <li>advertising and technical diagnostic information.</li>
+</ul>
+
+<p>
+MemoCards includes Android's Advertising ID permission because it integrates
+Google Mobile Ads. Availability and use of the Advertising ID depend on
+Android settings, Google Play services, applicable law, and your privacy
+choices.
+</p>
+
+<h2>7. Analytics, Crash Reporting, and Meta SDK</h2>
+
+<p>
+MemoCards contains integrations with Firebase Analytics, Firebase Crashlytics,
+and Meta/Facebook App Events.
+</p>
+
+<p>
+In the current privacy-hardened release, optional Firebase Analytics
+collection, Firebase Crashlytics collection, Meta automatic initialization,
+Meta automatic app-event logging, and Meta advertiser-ID collection are
+disabled by default.
+</p>
+
+<p>
+The current release does not provide an independent analytics opt-in that
+enables these optional telemetry systems. Advertising consent through UMP is
+not treated as consent to analytics.
+</p>
+
+<p>
+Older MemoCards versions may have used analytics or diagnostic collection
+under their then-current configuration. Information previously transmitted
+to a service provider may remain subject to that provider's retention and
+deletion practices.
+</p>
+
+<p>
+If MemoCards enables optional analytics or diagnostic collection in a future
+release, this Privacy Policy and any required in-app disclosures will be
+updated accordingly.
+</p>
+
+<h2>8. Notifications</h2>
+
+<p>
+MemoCards can provide local reminders and can use Firebase Cloud Messaging
+for remote notifications.
+</p>
+
+<p>
+Firebase Cloud Messaging may process an app-instance or registration token
+and technical application/device information required to route notifications.
+Android may also request permission before MemoCards can display
+notifications.
+</p>
+
+<p>
+You can manage notification permission through Android settings and available
+MemoCards notification settings.
+</p>
+
+<h2>9. Sensitive Device Permissions</h2>
+
+<p>
+The current MemoCards release does not request access to your precise
+location, contacts, microphone, camera, SMS messages, call logs, or broad
+all-files storage for its normal functionality.
+</p>
+
+<h2>10. How We Use Information</h2>
+
+<p>Information described in this Privacy Policy may be used to:</p>
+
+<ul>
+  <li>authenticate users who choose to sign in;</li>
+  <li>provide account-based features;</li>
+  <li>provide AI features;</li>
+  <li>verify purchases and subscriptions;</li>
+  <li>maintain account entitlements;</li>
+  <li>deliver application-provided dictionary/catalog content and media;</li>
+  <li>provide app configuration through Remote Config;</li>
+  <li>deliver notifications;</li>
+  <li>display advertising according to applicable privacy choices;</li>
+  <li>protect MemoCards and its backend from fraud, abuse, and unauthorized access;</li>
+  <li>operate and maintain the service.</li>
+</ul>
+
+<h2>11. Service Providers and Disclosure</h2>
+
+<p>
+We do not sell your personal information.
+</p>
+
+<p>
+We use third-party service providers where necessary to provide MemoCards
+features. Depending on the feature and app version, these can include:
+</p>
+
+<ul>
+  <li>
+    <strong>Google / Firebase</strong> — authentication, database,
+    backend functions, configuration, storage, messaging,
+    installation services, and App Check.
+  </li>
+
+  <li>
+    <strong>Google Play</strong> — billing, licensing,
+    purchase verification, and subscription management.
+  </li>
+
+  <li>
+    <strong>Google Gemini</strong> — AI generation in the current
+    privacy-hardened release.
+  </li>
+
+  <li>
+    <strong>Google AdMob and advertising partners</strong> —
+    advertising and related consent-dependent processing.
+  </li>
+
+  <li>
+    <strong>Meta</strong> — SDK functionality in versions or configurations
+    where Meta telemetry is enabled. Optional Meta telemetry is disabled in
+    the current privacy-hardened release.
+  </li>
+
+  <li>
+    <strong>Legacy AI or translation providers</strong>, including OpenAI,
+    DeepSeek, or DeepL, in older MemoCards versions that used those integrations.
+  </li>
+</ul>
+
+<p>
+We may also disclose information when required by applicable law, valid legal
+process, or when reasonably necessary to protect MemoCards, its users, or
+others against fraud, abuse, security threats, or unlawful activity.
+</p>
+
+<h2>12. Data Security</h2>
+
+<p>
+MemoCards uses reasonable technical and organizational measures designed to
+protect information handled by the service.
+</p>
+
+<p>
+Current protections include HTTPS/TLS connections, Firebase access controls,
+authenticated backend operations where applicable, server-side purchase
+verification, and Firebase App Check / Google Play Integrity protection for
+supported backend functions.
+</p>
+
+<p>
+No method of electronic transmission or storage can guarantee absolute
+security.
+</p>
+
+<h2>13. Data Retention</h2>
+
+<p>
+MemoCards server-side account records are retained while they are required to
+provide account, entitlement, purchase, or subscription functionality.
+They are deleted as described in the Account Deletion section unless
+retention is necessary for a legitimate legal, security, fraud-prevention,
+billing, or regulatory reason.
+</p>
+
+<p>
+Local content remains on your device until you delete it, clear MemoCards
+application storage, uninstall the application, or it is removed through
+Android/device backup management.
+</p>
+
+<p>
+Copies contained in Android or other device backups are controlled by the
+applicable operating-system or backup provider and its retention rules.
+</p>
+
+<p>
+Google Play transaction history and service-provider security,
+operational, billing, and backup records are controlled by the applicable
+provider and may be retained according to that provider's legal and
+operational requirements.
+</p>
+
+<h2>14. MemoCards Account Deletion</h2>
+
+<p>
+If you created a MemoCards account using Google Sign-In, you can initiate
+account deletion inside the app:
+</p>
+
+<p>
+<strong>MemoCards → Account Settings → Delete account</strong>
+</p>
+
+<p>
+You can also request account deletion without having MemoCards installed by
+using our public Account Deletion page:
+<a href="account_deletion.html">Delete Your MemoCards Account</a>.
+</p>
+
+<p>
+A successful MemoCards account deletion removes:
+</p>
+
+<ul>
+  <li>the Firebase Authentication account;</li>
+  <li>the associated MemoCards <code>user_limits</code> server record;</li>
+  <li>a legacy <code>user_stats</code> server record if one exists.</li>
+</ul>
+
+<p>
+If Google Play reports that a subscription is still set to auto-renew,
+MemoCards requires you to manage or cancel that subscription in Google Play
+before MemoCards account deletion can be completed.
+</p>
+
+<p>
+<strong>Deleting a MemoCards account does not itself cancel a Google Play
+subscription.</strong>
+</p>
+
+<p>
+When account deletion is completed inside the app, MemoCards also clears
+local account-linked subscription, entitlement, purchase-cache, and
+AI-description/regeneration state.
+</p>
+
+<p>
+Personal dictionaries that exist only locally on your device are intentionally
+preserved because they are not MemoCards cloud-account data. You can delete
+those dictionaries inside the app, clear MemoCards application storage, or
+remove them through the applicable Android storage/backup controls.
+</p>
+
+<h2>15. Your Choices and Rights</h2>
+
+<p>
+Depending on your location, applicable privacy law may provide rights such as
+access, correction, deletion, restriction, objection, portability, or
+withdrawal of consent.
+</p>
+
+<p>
+You can contact us using the email address below. We may request reasonable
+verification where necessary to prevent unauthorized access to or deletion
+of another person's account.
+</p>
+
+<p>
+Advertising/privacy options made available through Google UMP can be revisited
+through MemoCards where required. Android also provides device-level controls
+for notification permissions, advertising identifiers, application storage,
+and device backups.
+</p>
+
+<h2>16. Changes to This Privacy Policy</h2>
+
+<p>
+We may update this Privacy Policy when MemoCards features, service providers,
+or legal requirements change. The latest version will be published on this
+page with an updated effective or last-updated date.
+</p>
+
+<h2>17. Contact</h2>
+
+<p>
+For privacy questions, data requests, or account-deletion assistance:
+</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:Tolkien2007@yandex.ru">Tolkien2007@yandex.ru</a>
+</p>
+
+<p>MemoCards</p>
+
+</div>
 </body>
 </html>
